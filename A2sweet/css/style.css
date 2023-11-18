@@ -1,0 +1,320 @@
+@font-face {
+  font-family: font1;
+  src: url(../fonts/Agbalumo-Regular.ttf);
+}
+body{
+  font-family: font1;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25em; 
+}
+
+.logo img {
+    max-height: 5em; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 1.25em; 
+}
+
+.nav {
+    text-decoration: none;
+    color: #333; 
+    position: relative;
+    padding: 0.625em 1.25em; 
+    border: 0.125em solid #333; 
+    border-radius: 0.625em; 
+    transition: color 0.5s, background-color 0.5s, border-radius 0.5s;
+}
+
+a:hover {
+    color: #fff; /* Change to the desired hover text color */
+    background-color: rgba(255, 77, 0, 0.756); /* Transparent orange background on hover */
+    border-radius: 45%; /* Adjust the border radius for a semicircle effect */
+    font-weight: bold;
+}
+
+.search-bar {
+    margin-top: 0em; 
+}
+
+input[type="text"] {
+    padding: 1em;
+    border: 3px solid #8c8181;
+    border-radius: 2em; 
+    width: 18em; 
+}
+.multiple-backgrounds {
+    display: grid;
+    background-image: url('../img/Rimg1.png'), url('../img/Rimg2.jpg'); 
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    height: 38em;
+    
+    position: relative;
+}
+
+
+.multiple-backgrounds::before {
+    display: grid;
+    content: '';
+    background-image: url('../img/Rimg1.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+.multiple-backgrounds div:nth-child(1){
+    width: 35%; 
+    display: grid;
+    padding: 2em;
+    box-sizing: border-box;
+    position: relative;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+    background-color: rgb(255 205 161 / 80%);
+    z-index: 1;
+  }
+  .multiple-backgrounds div:nth-child(1) h1{
+    font-size: 3em;
+    color: #f8f8f8;
+    letter-spacing: 1.5px;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.5);
+  
+  }
+  .video-container video {
+    pointer-events: none;
+}
+.video-container video::-webkit-media-controls {
+    display: none ;
+}
+.image-video-section{
+    padding: 0em;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.image-container,
+.video-container {
+    width: 10em; 
+    height: 10em; 
+    margin: 2em; 
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    overflow: hidden;
+}
+.image-container img,
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buy-now-container {
+    text-align: center;
+    margin-top: 0em;
+}
+.btn-three {
+    color: #FFF;
+    display: inline-block;
+    padding: 1em 5em;
+    text-decoration: none;
+    background-color: #ff6600;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.btn-three:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3); 
+    
+}
+#svg-examples{
+    padding: 2% 0%;
+    background-color: rgb(237, 87, 22);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  
+  }
+  .btn-container-1{
+    width: 5%;
+    margin: auto;
+  }
+  .btn-container-1 .btn{
+    color: #f8f8f8;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 0px;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+  }
+  .btn-container-1 .btn-1{
+    font-weight: 100;
+  }
+   
+  .btn-container-1 .btn-1 svg{
+    height: 45px;
+    width: 200px;
+    position: absolute;
+    left: -62px;
+  }
+  .btn-container-1 .btn-1 rect{
+    fill: none;
+    stroke: #f8f8f8;
+    stroke-width: 2;
+    stroke-dasharray: 422,0;
+    transition: all 0.35s linear;
+  }
+  
+  .btn-container-1 .btn-1:hover{
+    background-color: rgba(225, 51, 45, 0);
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  .btn-container-1 .btn-1:hover rect{
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+  }
+  .details{
+    color: #f8f8f8;
+    text-align: center;
+    font-size: large;
+  }
+
+  .information-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0em; 
+}
+
+.image {
+    width: 32%;
+    padding: 4em;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; 
+    filter: grayscale(100%); 
+    transition: clip-path 1s, filter 1s;
+}
+
+.info-content {
+    width: 55%; 
+    margin-top: -20em;
+} 
+
+.info-content p {
+    font-size: 16px;
+}
+.image img:hover {
+  border-radius: 0; 
+  clip-path: none; 
+  filter: grayscale(0%); 
+}
+.info-content h2 {
+  font-size: x-large;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.info-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: width 0.5s ease-in-out;
+}
+
+.info-content h2:hover::after {
+  width: 100%;
+}
+.info{
+font-weight: 500;
+}
+
+.site-footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: orangered; 
+  color: #ffffff; 
+  padding: 2em 1em;
+  font-size: large;
+}
+
+
+
+.footer-logo {
+  text-align: center;
+  flex-grow: 1; 
+}
+
+.footer-logo img {
+  width: 15em;
+  height: auto;
+  transition: transform 0.7s;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.2);
+}
+
+.footer-info p {
+  margin-bottom: 0.625em;
+}
+
+.footer-contact h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.625em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  margin-bottom: 0.625em;
+  padding: 0.5em;
+  border-radius: 0.3125em;
+  border: 0.0625em solid #ccc;
+}
+
+.contact-form button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.contact-form button:hover {
+  background-color: #ffce8e;
+}
